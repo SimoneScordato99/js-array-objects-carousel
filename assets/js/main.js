@@ -130,6 +130,20 @@ let playy = document.querySelector('.play')
 playy.addEventListener('click', function(){
     let playcarusel = setInterval(play ,1000);
 
+function play(){
+    let vecchiaImg = document.getElementById(`${immagineAttiva}`)
+    immagineAttiva = immagineAttiva + 1;
+    
+    if (immagineAttiva == images.length+1) {
+        immagineAttiva = 0;
+    }
+    let nuovaImg= document.getElementById(`${immagineAttiva}`);
+    if (vecchiaImg.classList.contains('attiva')){
 
+        vecchiaImg.classList.remove('attiva');
+        nuovaImg.classList.add('attiva');
+    }
+
+}
 })
 

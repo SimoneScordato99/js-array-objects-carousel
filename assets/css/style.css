@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(54, 54, 54);
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+h4 {
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.carosello {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.freccia {
+    font-size: 45px;
+    cursor: grab;
+    color: white;
+}
+.freccia:hover {
+    color: rgb(178, 178, 178);
+}
+
+.immagine {
+    display: none;
+    position: relative;
+}
+.attiva {
+    display: block;
+    
+}
+img {
+    border-radius: 25px;
+}
+.text {
+    position: absolute;
+    top:0;
+    left: 20px;
+    color: white;
+}
